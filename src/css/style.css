@@ -32,6 +32,9 @@
   align-items: flex-end;
   margin-top: 20px;
 }
+.main-section__content-container {
+  display: flex;
+}
 
 .nav-menu__list {
   display: flex;
@@ -91,4 +94,24 @@
   border-radius: 100px;
   transform: rotate(-36.15deg);
   z-index: 1;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+.icons-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #246ace;
+  border-radius: 25px;
+  font-size: 21px;
+  padding: 15px;
+  margin-right: 17px;
+}
+.icons-item:last-child {
+  margin-right: 0px;
 }/*# sourceMappingURL=style.css.map */
