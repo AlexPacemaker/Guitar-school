@@ -5,4 +5,25 @@
 .main-section {
   height: 800px;
   background: #f5f5f5;
+  padding-top: 16px;
+  &__nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 69px;
+    align-items: center;
+  }
+}
+
+.nav-menu {
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+  &__list-item {
+    margin-right: 64px;
+    font-size: 18px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
