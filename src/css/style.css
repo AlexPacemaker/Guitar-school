@@ -1,10 +1,9 @@
-.header {
-  background-color: black;
-  color: yellow;
-  text-align: center;
-  padding: 10px;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
-.header__paragraph {
-  font-size: 20px;
-  color: orange;
+
+.main-section {
+  height: 800px;
+  background: #f5f5f5;
 }/*# sourceMappingURL=style.css.map */
