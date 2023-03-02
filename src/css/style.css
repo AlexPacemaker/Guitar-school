@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratT";
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-family: "Montserrat";
+  font-weight: regular;
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -56,6 +74,11 @@
 }
 .nav-menu__list-item:last-child {
   margin-right: 0;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 .left-wrapper {
@@ -145,6 +168,7 @@
 
 .title {
   font-size: 72px;
+  font-weight: bold;
   position: relative;
 }
 .title__hr {
@@ -156,6 +180,7 @@
 
 .buttons {
   display: flex;
+  font-weight: bold;
 }
 .buttons__icon-btn {
   display: flex;
@@ -263,6 +288,7 @@
 }
 .icons_item__text span {
   font-size: 48px;
+  font-weight: bold;
 }
 
 .third-section {

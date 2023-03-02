@@ -3,6 +3,26 @@ $color-orange: #d0582b;
 $color-grey: #f9d9d9;
 $container-color: #988888;
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratT";
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  font-family: "Montserrat";
+  font-weight: regular;
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -62,6 +82,11 @@ $container-color: #988888;
     &:last-child {
       margin-right: 0;
     }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
   }
 }
 
@@ -153,6 +178,7 @@ $container-color: #988888;
 
 .title {
   font-size: 72px;
+  font-weight: bold;
   position: relative;
   &__hr {
     width: 65px;
@@ -164,6 +190,7 @@ $container-color: #988888;
 
 .buttons {
   display: flex;
+  font-weight: bold;
   &__icon-btn {
     display: flex;
     align-items: center;
@@ -276,6 +303,7 @@ $container-color: #988888;
     font-size: 18px;
     span {
       font-size: 48px;
+      font-weight: bold;
     }
   }
 }
