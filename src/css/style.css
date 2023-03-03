@@ -163,6 +163,9 @@ html a {
   padding: 15px;
   margin-right: 17px;
 }
+.icons-item:hover {
+  cursor: pointer;
+}
 .icons-item:last-child {
   margin-right: 0px;
 }
@@ -201,6 +204,10 @@ html a {
   border: none;
   font-size: 18px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  opacity: 0.9;
+}
+.buttons__main-btn:hover {
+  opacity: 1;
 }
 
 .elipse {
@@ -465,7 +472,7 @@ html a {
   padding: 10px;
   background-color: #d0582b;
   border: 1px solid grey;
-  box-shadow: 2px 2px 10px 5px grey;
+  box-shadow: 2px 2px 10px 2px grey;
   border-radius: 10px;
   opacity: 0.9;
   margin-bottom: 20px;
