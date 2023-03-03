@@ -15,16 +15,30 @@
     <title>Школа игры на гитаре</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons" />
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicons/favicon-16x16.png"
+    />
     <link rel="manifest" href="icons/favicons/site.webmanifest" />
-    <link rel="mask-icon" href="icons/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="icons/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <!-- Первая секция -->
-    <main class="main-section">
+    <main id="top" class="main-section">
       <div class="container main-section__nav-container">
         <header class="main-section__header">
           <a href="#"><img src="img/guitar.svg" alt="logo" /></a>
@@ -36,7 +50,9 @@
           <ul class="nav-menu__list">
             <li class="nav-menu__list-item"><a href="#about-me">Обо мне</a></li>
             <li class="nav-menu__list-item"><a href="#lessons">Занятия</a></li>
-            <li class="nav-menu__list-item"><a href="#">Контакты</a></li>
+            <li class="nav-menu__list-item">
+              <a href="#openModal">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -75,14 +91,18 @@
           <!-- кнопки -->
           <div class="right-wrapper__button buttons">
             <button class="buttons__main-btn">
-              Забронировать<br />
-              урок
+              <a href="registration.html">
+                Забронировать<br />
+                урок
+              </a>
             </button>
             <div class="right-wrapper__icon-btn buttons__icon-btn">
               <img src="/src/img/chat.svg" alt="chat" />
               <p class="buttons__text">
-                Есть<br />
-                вопросы?
+                <a href="#openModal"
+                  >Есть<br />
+                  вопросы?</a
+                >
               </p>
             </div>
           </div>
@@ -224,14 +244,18 @@
           <!-- кнопки -->
           <div class="right-wrapper__button buttons">
             <button class="buttons__main-btn">
-              Забронировать<br />
-              урок
+              <a href="registration.html">
+                Забронировать<br />
+                урок
+              </a>
             </button>
             <div class="right-wrapper__icon-btn buttons__icon-btn">
               <img src="/src/img/chat.svg" alt="chat" />
               <p class="buttons__text">
-                Есть<br />
-                вопросы?
+                <a href="#openModal"
+                  >Есть<br />
+                  вопросы?</a
+                >
               </p>
             </div>
           </div>
@@ -258,8 +282,28 @@
               <i class="fa-brands fa-square-instagram"></i>
             </div>
           </div>
+
+          <div class="to_the_top">
+            <a href="#top"><h1>Наверх!</h1></a>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- Модальное окно контактов -->
+    <div id="openModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Контакты</h3>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal-body">
+            <p>e-mail: guitar_guru@mail.com</p>
+            <br />
+            <p>тел: 111 (222) 333-44-55</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

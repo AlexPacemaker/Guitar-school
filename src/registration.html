@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/registration.css" />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <form action="action_page.php">
+      <div class="container">
+        <h1 class="container__title">Заказать обратный звонок</h1>
+        <p>
+          Пожалуйста заполните эту форму, чтобы записаться на пробное занятие
+        </p>
+        <hr />
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Введите адрес email"
+          name="email"
+          required
+        />
+
+        <label for="psw"><b>Оставьте свой телефон</b></label>
+        <input type="number" placeholder="Телефон" name="psw" required />
+
+        <label for="psw-repeat"><b>Как к вам обращаться</b></label>
+        <input type="text" placeholder="Имя" name="psw-repeat" required />
+        <hr />
+
+        <button type="submit" class="registerbtn">
+          Записаться на пробное занятие!
+        </button>
+        <button type="submit" class="registerbtn">
+          <a href="index.html"> Вернуться на главную страницу </a>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
