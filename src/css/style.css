@@ -779,9 +779,4 @@ html a {
   .footer__title {
     font-size: 49px;
   }
-}
-@media (max-width: 575px) {
-  .container {
-    width: 100%;
-  }
 }/*# sourceMappingURL=style.css.map */
