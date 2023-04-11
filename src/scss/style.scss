@@ -347,8 +347,6 @@ html {
   &__right-wrapper {
     max-width: 480px;
   }
-  &__left-wrapper {
-  }
   &__right-title {
     margin-bottom: 20px;
   }
@@ -428,10 +426,13 @@ html {
   width: auto;
   margin: 10px;
 }
-@media (min-width: 576px) {
+@media (max-width: 425px) {
   .modal-dialog {
     max-width: 500px;
     margin: 30px auto; /* для отображения модального окна по центру */
+  }
+  .modal {
+    width: 350px;
   }
 }
 /* свойства для блока, содержащего контент модального окна */
@@ -862,5 +863,175 @@ html {
     &__title {
       font-size: 49px;
     }
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 100%;
+  }
+
+  .main-section {
+    min-height: 510px;
+    &__nav-container {
+      margin-bottom: 34px;
+    }
+    &__first-elipse {
+      position: absolute;
+      top: 284px;
+      right: 106px;
+    }
+  }
+  .left-wrapper {
+    img {
+      width: 280px;
+      height: auto;
+    }
+    &__rectangle-blue {
+      width: 220px;
+      height: 70px;
+      top: 80px;
+      left: -48px;
+    }
+    &__rectangle-orange {
+      width: 223px;
+      height: 90px;
+      top: 80px;
+      left: 15;
+    }
+    &__rectangle-grey {
+      width: 190px;
+      height: 70px;
+      top: 90px;
+      left: -10;
+    }
+  }
+
+  .main-section__first-elipse {
+    position: absolute;
+    top: 154px;
+    right: 16px;
+  }
+
+  .right-wrapper {
+    width: 185px;
+    top: -10px;
+    right: 60px;
+    &__icons-box {
+      padding-left: 30px;
+      margin-bottom: 10px;
+    }
+    &__title {
+      padding-left: 120px;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 130px;
+      hr {
+        display: none;
+      }
+    }
+    &__text {
+      width: 180px;
+      padding-left: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .buttons__main-btn {
+      margin-left: -100px;
+    }
+  }
+
+  .nav-menu__list-item {
+    margin-right: 5px;
+    font-size: 15px;
+    &:last-child {
+      margin-right: 30px;
+    }
+  }
+
+  .main-section__header {
+    span {
+      display: none;
+    }
+  }
+
+  .main-section__logo {
+    width: 45px;
+    margin-left: 40px;
+  }
+
+  .second-section {
+    min-height: 290px;
+
+    &__cards-box {
+      justify-content: space-around;
+    }
+
+    &__cards-item {
+      img {
+        width: 120px;
+      }
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__icons-box {
+      width: 350px;
+      display: flex;
+      justify-content: space-between;
+      // overflow-x: auto;
+    }
+    &__icons-item {
+      margin-right: 5px;
+      img {
+        width: 32px;
+      }
+      span {
+        font-size: 10px;
+      }
+      p {
+        font-size: 7px;
+      }
+    }
+  }
+  .third-section {
+    min-height: 350px;
+    %__left-wrapper {
+      margin-right: 110px;
+    }
+    &__container {
+      padding-left: 12px;
+    }
+    &__left-img {
+      display: none;
+    }
+    &__left-title {
+      display: none;
+    }
+    &__right-title {
+      font-size: 25px;
+      margin-bottom: 10px;
+      hr {
+        display: none;
+      }
+    }
+    &__text {
+      width: 350px;
+      font-size: 12px;
+    }
+  }
+  .footer {
+    &__img {
+      width: 250px;
+    }
+    &__title {
+      font-size: 49px;
+    }
+  }
+
+  a {
+    font-size: 12px;
+    padding: 5px;
   }
 }
