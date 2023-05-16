@@ -354,6 +354,7 @@ html a {
   justify-content: flex-end;
 }
 .footer__title {
+  font-size: 70px;
   margin-bottom: 28px;
   text-align: center;
 }
